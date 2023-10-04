@@ -1,0 +1,2 @@
+class Twwet < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Twwets</h1>
+
+<div id="twwets">
+  <% @twwets.each do |twwet| %>
+    <%= render twwet %>
+    <p>
+      <%= link_to "Show this twwet", twwet %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New twwet", new_twwet_path %>

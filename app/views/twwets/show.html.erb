@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @twwet %>
+
+<div>
+  <%= link_to "Edit this twwet", edit_twwet_path(@twwet) %> |
+  <%= link_to "Back to twwets", twwets_path %>
+
+  <%= button_to "Destroy this twwet", @twwet, method: :delete %>
+</div>

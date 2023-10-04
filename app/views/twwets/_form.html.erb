@@ -1,0 +1,27 @@
+<%= form_with(model: twwet) do |form| %>
+  <% if twwet.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(twwet.errors.count, "error") %> prohibited this twwet from being saved:</h2>
+
+      <ul>
+        <% twwet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :message, style: "display: block" %>
+    <%= form.text_field :message %>
+  </div>
+
+  <div>
+    <%= form.label :tdate, style: "display: block" %>
+    <%= form.datetime_field :tdate %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
