@@ -8,6 +8,9 @@
 <% end %>
 
 <%= form_for @tweet , url: {action: :create} do |f| %>
+    <%= link_to '←', :back %>
+    <p></p>
+    <p><%= render "form" %></p>
     <%= f.label :message, 'メッセージ' %>
     <%= f.text_field :message %>
     <%= f.submit '登録' %>

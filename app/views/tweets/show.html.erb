@@ -1,5 +1,7 @@
+<%= link_to '←', :back %>
+<p></p>
+<p><%= render "form" %></p>
 <p>
 <%= @tweet.message %>
 <%= ((Time.current - @tweet.tdate)/60).to_i %>分
 </p>
-<%= link_to '戻る', :back %>

@@ -1,15 +1,45 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+#sidebar{
+    float: left;
+    width: 30;
+    margin: 20px 0 0 50px;
+    background-color: #f1f8ff;
+    padding: 20px;
+}
+
+#content{
+    width: 70;
+    margin: 0 0 0 250px;
+    font-family: "San Francisco";
+}
+
+#head{
+    width: 70;
+    margin: 0 0 0 250px;
+}
+
+#form{
+    background: #f1f8ff;
+    padding: 10px;
+}
+
+span{
+    background-color: #1da1fe;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+    background: #f1f8ff;/*背景色*/
+    padding: 10px;
+    margin-bottom: 3px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+}
+#bird{
+    text-align: center;
+    background-color: #1da1fe;
+}
+
+/*すること・・・ツイート、編集画面のyournameにも背景つける。
+サイドバーとコンテンツの幅を調整する。
+ツイートの文字の大きさの調整。*/
